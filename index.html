@@ -1,142 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Janhavi Rajurkar — Portfolio</title>
-  <style>
-    :root{--accent:#0d9488;--bg:#ffffff;--muted:#56616b;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:#0b1820;line-height:1.5;font-family:var(--font, Inter),sans-serif}
-    .container{max-width:1000px;margin:28px auto;padding:20px}
-    header{display:flex;gap:18px;align-items:center}
-    .photo{width:110px;height:110px;border-radius:12px;overflow:hidden;background:#eee;flex:0 0 110px}
-    .photo img{width:100%;height:100%;object-fit:cover}
-    h1{margin:0;font-size:1.6rem}
-    .tag{color:var(--muted);margin-top:6px}
-    nav{margin-left:auto}
-    nav a{margin-left:12px;text-decoration:none;color:var(--accent);font-weight:600}
-
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
-    .card{background:#fbfdfe;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,25,0.04)}
-
-    .section-title{font-size:0.95rem;color:var(--accent);font-weight:700;margin-bottom:8px}
-
-    .about p{margin:0 0 10px}
-    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:6px 0;list-style:none}
-    ul.skills li{background:rgba(13,148,136,0.08);padding:6px 10px;border-radius:999px;font-size:0.85rem;color:var(--accent)}
-
-    .project{margin-bottom:12px}
-    .project h4{margin:0 0 6px;font-size:1rem}
-    .project p{margin:0;color:var(--muted)}
-
-    .contact a{display:inline-block;margin-right:12px;text-decoration:none;color:var(--accent);font-weight:600}
-
-    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:0.9rem}
-
-    /* responsive */
-    @media (max-width:880px){.grid{grid-template-columns:1fr}.photo{width:90px;height:90px}.container{padding:16px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janhavi Rajurkar | Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; background-color: #f7f7f7; color:#333; }
+        header { background-color: #008080; color:white; padding:30px 20px; text-align:center; }
+        header h1 { margin:0; font-size:2em; }
+        header p { margin:5px 0 0 0; font-size:1.1em; }
+        main { max-width:900px; margin:20px auto; padding:0 20px; }
+        section { background:white; padding:20px; margin-bottom:15px; border-radius:8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        .section-title { font-size:1.3em; color:#008080; font-weight:bold; margin-bottom:10px; border-bottom:2px solid #008080; padding-bottom:5px; }
+        a { color:#008080; text-decoration:none; }
+        a:hover { text-decoration:underline; }
+        ul { padding-left:20px; }
+        .project a { font-weight:bold; }
+        footer { text-align:center; padding:15px; font-size:0.9em; color:#555; }
+        img.profile { width:150px; height:150px; border-radius:50%; object-fit:cover; margin-bottom:10px; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="photo" id="photo">
-        <!-- Replace this with your photo file named janhavi_photo.jpg in the same folder -->
-        <img src="janhavi_photo2.jpg" alt="Janhavi Rajurkar">
-      </div>
-      <div>
-        <h1>Janhavi Rajurkar</h1>
-        <div class="tag">Electronics &amp; Telecommunication student | Aspiring Software Developer — Always open to learning</div>
-        <div style="margin-top:8px;color:var(--muted)">Manewada, Nagpur • <a href="mailto:rajurkarjanhavi@gmail.com">rajurkarjanhavi@gmail.com</a></div>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <div class="grid">
-      <main>
-        <section id="about" class="card about">
-          <div class="section-title">About Me</div>
-          <p>Motivated and adaptable student focused on problem-solving and teamwork in dynamic environments. I enjoy building practical systems (IoT & embedded) and learning software development to create useful digital solutions. I am eager to grow, collaborate and learn new technologies.</p>
-          <p style="margin-top:8px"><strong>Currently:</strong> B.Tech (Electronics & Telecommunication), final year — building IoT projects and learning web development (MERN).</p>
-        </section>
+<header>
+    <img src="janhavi_photo2.jpg" alt="Janhavi Rajurkar" class="profile">
+    <h1>Janhavi Rajurkar</h1>
+    <p>Electronics & Telecommunication student | Aspiring Software Developer — Always open to learning</p>
+</header>
 
-        <section id="projects" class="card" style="margin-top:16px">
-          <div class="section-title">Selected Projects</div>
+<main>
 
-          <div class="project">
-            <h4>Voice-Controlled Smart Home Automation System</h4>
-            <p>Implemented with ESP32 and ESP RainMaker; integrated Google Assistant for voice commands to control relays and appliances.</p>
-          </div>
+<!-- About -->
+<section id="about">
+    <div class="section-title">About Me</div>
+    <p>Motivated and adaptable professional with a focus on problem-solving and teamwork in dynamic environments. Seeking to contribute to innovative projects while continuously enhancing technical skills. Strong communication and time-management abilities complement my technical foundation.</p>
+</section>
 
-          <div class="project">
-            <h4>Gas Leak Alert and Ventilation System</h4>
-            <p>Real-time safety system using MQ5 gas sensor, Arduino Nano, fan and buzzer to detect gas leaks and trigger automatic ventilation and sound alerts.</p>
-          </div>
+<!-- Education -->
+<section id="education">
+    <div class="section-title">Education</div>
+    <p><strong>B.Tech, Electronics & Telecommunication</strong> — Cummins College of Engineering for Women, Nagpur (Sept 2022 – July 2026) | CGPA: 7.9</p>
+    <p><strong>12th CBSE</strong> — School of Scholars, Nagpur (2022) | 80.4%</p>
+    <p><strong>10th CBSE</strong> — Montfort Sr Sec School, Nagpur (2020) | 96.4%</p>
+</section>
 
-          <div class="project">
-            <h4>Library Management System — <a href="https://github.com/JanhaviR-18/Library-Management-System" target="_blank">GitHub</a></h4>
-            <p>CLI-based application in C++ using OOP and file handling to manage books and users.</p>
-          </div>
+<!-- Skills -->
+<section id="skills">
+    <div class="section-title">Skills & Tools</div>
+    <ul>
+        <li><strong>Programming Languages:</strong> C++, SQL</li>
+        <li><strong>Tools/Platforms:</strong> VS Code, MATLAB (basic)</li>
+        <li><strong>IoT & Embedded Systems:</strong> Tinkercad, Arduino Interfacing & Programming</li>
+        <li><strong>Soft Skills:</strong> Leadership, Effective Communication, Creativity, Time Management, Discipline</li>
+        <li><strong>Interests:</strong> Sketching, Singing, Reading, Basketball</li>
+        <li><strong>Languages:</strong> English, Hindi, Marathi, German (Elementary)</li>
+    </ul>
+</section>
 
-        </section>
-
-      </main>
-
-      <aside>
-        <div class="card">
-          <div class="section-title">Skills</div>
-          <ul class="skills">
-            <li>C++</li>
-            <li>SQL</li>
-            <li>Arduino / ESP32</li>
-            <li>IoT</li>
-            <li>VS Code</li>
-            <li>MATLAB (basic)</li>
-            <li>React (learning)</li>
-          </ul>
-
-          <div style="height:12px"></div>
-
-          <div class="section-title">Certifications</div>
-          <p style="margin:0 0 6px;color:var(--muted)">AWS Certified Cloud Practitioner • Introduction to Blockchain • IoT (NPTEL)</p>
-
-          <div style="height:12px"></div>
-          <div class="section-title">Achievements</div>
-          <p style="margin:0;color:var(--muted)">LPF Scholarship • LeetCode SQL Badge • 2nd in Damini Basketball • Vice President, Technoformer’s Club</p>
-        </div>
-
-        <div class="card" id="contact" style="margin-top:16px">
-          <div class="section-title">Contact</div>
-          <p style="margin:0 0 8px">Email: <a href="mailto:rajurkarjanhavi@gmail.com">rajurkarjanhavi@gmail.com</a></p>
-          <p style="margin:0 0 8px">LinkedIn: <a href="https://www.linkedin.com/in/janhavi-rajurkar-b288a3256/" target="_blank">linkedin.com/in/janhavi-rajurkar-b288a3256</a></p>
-          <p style="margin:0 0 8px">GitHub: <a href="https://github.com/JanhaviR-18" target="_blank">github.com/JanhaviR-18</a></p>
-
-          <div style="margin-top:12px">
-            <a href="mailto:rajurkarjanhavi@gmail.com" class="contact-link">Email Me</a>
-          </div>
-        </div>
-      </aside>
+<!-- Projects -->
+<section id="projects">
+    <div class="section-title">Projects</div>
+    <div class="project">
+        <p><strong>Gas Leak Alert and Ventilation System</strong> — A real-time safety system using sensors and actuators.</p>
+        <ul>
+            <li>Designed a safety system using MQ5 gas sensor, Arduino Nano, fan and buzzer to detect gas leaks and trigger automatic ventilation and sound alerts in real-time.</li>
+        </ul>
     </div>
+    <div class="project">
+        <p><strong><a href="https://github.com/JanhaviR-18/Library-Management-System" target="_blank">Library Management System</a></strong> — CLI-based application utilizing OOP and file handling.</p>
+        <ul>
+            <li>Developed a command-line based library management system in C++, utilizing OOP principles and file handling to manage books and users.</li>
+        </ul>
+    </div>
+</section>
 
-    <footer>
-      Built by Janhavi Rajurkar • Available for internships & learning opportunities
-    </footer>
-  </div>
+<!-- Training / Internship -->
+<section id="experience">
+    <div class="section-title">Training / Internship</div>
+    <p><strong>Embedded IoT Intern</strong> — VS Informatics, Nagpur (May 2025 – Jul 2025)</p>
+    <ul>
+        <li>Acquired practical knowledge of basic electronic components and their real-world applications.</li>
+        <li>Learned to work with Arduino IDE and programmed ESP32 for control and automation tasks.</li>
+        <li>Designed and implemented a Voice-Controlled Smart Home Automation System integrated with Google Assistant and ESP RainMaker.</li>
+    </ul>
+    <p><strong>Trainee</strong> — Dassault Systèmes</p>
+    <ul>
+        <li>Gained practical exposure to core Object-Oriented Programming concepts through offline sessions, completing exercises under guidance.</li>
+    </ul>
+</section>
 
-  <script>
-    // smooth scroll for nav links
-    document.querySelectorAll('nav a').forEach(a=>{
-      a.addEventListener('click',e=>{
-        e.preventDefault();
-        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth',block:'start'});
-      })
-    })
-  </script>
+<!-- Certifications -->
+<section id="certifications">
+    <div class="section-title">Certifications</div>
+    <ul>
+        <li><a href="https://www.credly.com/badges/0b9c9fe7-d8d4-4bd0-a8e9-6d1bd30b125b/public_url" target="_blank">AWS Certified Cloud Practitioner</a> — Amazon Web Services</li>
+        <li><a href="https://coursera.org/share/096efa9367aeed52f8d70c837afa6bae" target="_blank">Introduction to Blockchain Technologies</a> — Coursera</li>
+        <li>Internet of Things (Silver Badge) — NPTEL</li>
+        <li><a href="https://coursera.org/share/8f2d36b7900969c453a671f49a0f7b3e" target="_blank">Mindshift: Break Through Obstacles</a> — Coursera</li>
+    </ul>
+</section>
+
+<!-- Leadership / Achievements -->
+<section id="achievements">
+    <div class="section-title">Leadership & Achievements</div>
+    <ul>
+        <li>LPF Scholarship holder: Awarded 4-year UG scholarship by the Lila Poonawalla Foundation (2022–2026)</li>
+        <li>SQL Badge: Earned on LeetCode (solved 50 problems)</li>
+        <li>2nd Position: Damini Intercollege Basketball Competition (2025)</li>
+        <li>Vice President — Technoformer’s Club (2024–25)</li>
+        <li>Event Coordinator — Robotics and Automation Club (2024–25)</li>
+    </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="section-title">Contact</div>
+    <p>Email: <a href="mailto:rajurkarjanhavi@gmail.com">rajurkarjanhavi@gmail.com</a></p>
+    <p>Phone: +91-9322082834</p>
+    <p>Location: Manewada, Nagpur, 440027</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/janhavi-rajurkar-b288a3256/" target="_blank">https://www.linkedin.com/in/janhavi-rajurkar-b288a3256/</a></p>
+    <p>GitHub: <a href="https://github.com/JanhaviR-18" target="_blank">https://github.com/JanhaviR-18</a></p>
+</section>
+
+</main>
+
+<footer>
+    © 2025 Janhavi Rajurkar
+</footer>
+
 </body>
 </html>
